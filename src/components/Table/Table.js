@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import DeleteInvoice from '../Home/DeleteInvoice';
 
 const Table = () => {
 
   const [invoices, setInvoices] = useState([]);
     
   useEffect(() =>{
-      fetch('http://localhost:5000/billing-list')
+      fetch('https://multicultural-moose-56331.herokuapp.com/billing-list')
       .then(res => res.json())
       .then(data =>setInvoices(data))
   }, [])
+
     return (
         <div class="overflow-x-auto">
         <table class="table w-full">
@@ -32,7 +34,7 @@ const Table = () => {
               <td>{invoice.email}</td>
               <td>{invoice.phone}</td>
               <td>{invoice.paidAmount}</td>
-              <td>Edit</td>
+              <td> <DeleteInvoice invoices={invoices} invoice={invoice} setInvoices={setInvoices}></DeleteInvoice></td>
             </tr>)
           }
     

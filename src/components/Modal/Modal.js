@@ -13,7 +13,7 @@ event.preventDefault()
     
 
      const newInvoice = {fullName,email,phone, paidAmount};
-    const url = 'http://localhost:5000/add-billing';
+    const url = 'https://multicultural-moose-56331.herokuapp.com/add-billing';
      fetch(url , {
         method: "POST",
         headers:{
