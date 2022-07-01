@@ -2,8 +2,37 @@ import React from 'react';
 
 const Modal = () => {
 
-const invoiceSubmit = (e) =>{
-e.preventDefault()
+const invoiceSubmit = (event) =>{
+event.preventDefault()
+
+     const fullName = event.target.name.value;
+ 
+     const email = event.target.email.value;
+      const phone = event.target.phone.value;
+     const paidAmount = event.target.paidAmount.value;
+    
+
+     const newInvoice = {fullName,email,phone, paidAmount};
+    const url = 'http://localhost:5000/add-billing';
+     fetch(url , {
+        method: "POST",
+        headers:{
+          'content-type' : 'application/json'
+        },
+        body:JSON.stringify(newInvoice)
+      }).then(res => res.json())
+        .then(data => {
+           
+            console.log(data)
+            
+            event.target.reset()
+        })
+    
+
+
+
+
+
 }
 
     return (
@@ -71,3 +100,5 @@ e.preventDefault()
 };
 
 export default Modal;
+
+

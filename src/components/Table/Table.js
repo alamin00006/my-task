@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Table = () => {
+
+  const [invoices, setInvoices] = useState([]);
+    
+  useEffect(() =>{
+      fetch('http://localhost:5000/billing-list')
+      .then(res => res.json())
+      .then(data =>setInvoices(data))
+  }, [])
     return (
         <div class="overflow-x-auto">
         <table class="table w-full">
@@ -17,14 +25,16 @@ const Table = () => {
           </thead>
           <tbody>
           
-            <tr>
+          {
+             invoices.map(invoice => <tr>
               <th>1</th>
-              <td>Cy Ganderton</td>
-              <td>Quality Control Specialist</td>
-              <td>Blue</td>
-              <td>500</td>
+              <td>{invoice.fullName}</td>
+              <td>{invoice.email}</td>
+              <td>{invoice.phone}</td>
+              <td>{invoice.paidAmount}</td>
               <td>Edit</td>
-            </tr>
+            </tr>)
+          }
     
             </tbody>
 

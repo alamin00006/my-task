@@ -1,0 +1,44 @@
+[
+    {
+      "_id": "62bec6159ada8d2ecaef63c8",
+      "paidAmount": "200",
+      "fullName": "Mayra Snider",
+      "email": "alaminbamna08@gmail.com",
+      "phone": "01749718743"
+    },
+    {
+      "_id": "62bec6153859195438be984d",
+      "paidAmount": "300",
+      "fullName": "Pruitt Knowles",
+      "email": "alaminbamna08@gmail.com",
+      "phone": "01749718743"
+    },
+    {
+      "_id": "62bec615a47dac76eb570f18",
+      "paidAmount": "100",
+      "fullName": "Duncan Hendrix",
+      "email": "alaminbamna08@gmail.com",
+      "phone": "01749718743"
+    },
+    {
+      "_id": "62bec615d118fb9ee81ab980",
+      "paidAmount": "500",
+      "fullName": "Craft Mcleod",
+      "email": "alaminbamna08@gmail.com",
+      "phone": "01749718743"
+    },
+    {
+      "_id": "62bec615a6f3aaae6e0e7d7e",
+      "paidAmount": "540",
+      "fullName": "Mathews Olsen",
+      "email": "alaminbamna08@gmail.com",
+      "phone": "01749718743"
+    },
+    {
+      "_id": "62bec6151a25e79a5850f25b",
+      "paidAmount": "600",
+      "fullName": "Carmen Velazquez",
+      "email": "alaminbamna08@gmail.com",
+      "phone": "01749718743"
+    }
+  ]
