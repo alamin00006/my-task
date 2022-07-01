@@ -6,7 +6,7 @@ const Searching = () => {
          <label className='mr-5 font-bold'>Billings</label>
          <input className='' type="text" placeholder="Search Here" class="input input-bordered w-full max-w-xs" />
 
-         <label for="my-modal" class="btn modal-button">open modal</label>
+         <label for="my-modal" class="btn modal-button">Add New Billing</label>
 
       </div>
     );
